@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calendar with JavaScript</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>JavaScript Calender</h1>
+    <div class="calendar">
+        <div class="cal-menu">
+            <span id="month-year" class="current-month"></span> <span id="year" class="current-year"></span>
+            <span id="date"><input type="date"></span>
+        </div>
+        <div class="cal-body">
+            <div class="previous"><i class="fa-solid fa-backward"></i></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+            <div class="next"><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

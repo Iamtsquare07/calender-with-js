@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+body {
+    padding: 10px;
+    background-color: #000014;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255, 217, 0, 0.61);
+    font-family: 'Croissant One', cursive;
+}
+
+.calendar {
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-top: 80px;
+    background-color: #00006e;
+    padding: 50px 20px 50px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #1b37b4;
+}
+
+.calendar:hover {
+    box-shadow: 1px 1px 15px 2px #1b37b4;
+}
+
+.calendar table {
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+td:hover {
+    border-radius: 50%;
+    background-color: #7b7bf0;
+}
+
+.cal-menu {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.current-year,
+.current-month,
+#date {
+    border-radius: 7px;
+    padding: 5px 7px 5px 7px;
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.current-year:hover,
+.current-month:hover,
+#date:hover,
+#date>input:hover {
+    background-color: #7b7bf0;
+}
+
+.cal-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous,
+.next {
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.previous>i,
+.next>i {
+    padding: 5px;
+}
+
+.previous>i:hover,
+.next>i:hover {
+    box-shadow: 1px 1px 5px 1px #1b37b4;
+
+}
+
+#date>input {
+    background-color: #7b7bf0;
+    border: 1px solid #7b7bf0;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+#date>input:hover {
+    border: 1px solid #7b7bf0;
+}
+
+.current-day {
+    border-radius: 55%;
+    background-color: #7b7bf0;
+}
+
+.current-day:hover {
+    background-color: #3a3ae6;
+}
+
+.prev-month {
+    color: #546d9c;
+}
+
+.next-month {
+    color: #546d9c;
+}
+
+@media only screen and (min-width: 1024px){
+    .calendar {
+        width: 30%;
+        padding: 50px 20px 50px 20px;
+    }
+}
