@@ -4,8 +4,6 @@ let yearHeader = document.getElementById("year");
 
 function generateCalendar(year, month, day) {
     const calendarBody = document.getElementById("calendar-body");
-
-    // Clear the previous calendar
     calendarBody.innerHTML = "";
 
     // Create a date object for the first day of the current month
