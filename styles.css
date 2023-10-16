@@ -14,6 +14,7 @@ h1 {
     margin-bottom: 20px;
     color: rgba(255, 217, 0, 0.61);
     font-family: 'Croissant One', cursive;
+    font-size: 5vw;
 }
 
 .calendar {
@@ -124,9 +125,14 @@ td:hover {
     color: #546d9c;
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
     .calendar {
-        width: 30%;
+        min-width: 500px;
+        width: 40%;
         padding: 50px 20px 50px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 }
